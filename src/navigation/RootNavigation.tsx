@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/HomeScreen';
+import HomeNavigation from './HomeNavigation';
 import ChatNavigation from './ChatNavigation';
 import ListScreen from '../screens/ListScreen';
 
@@ -13,7 +13,7 @@ const RootNavigation = () => {
             <Tab.Navigator initialRouteName="Home">
                 <Tab.Screen
                     name="Home"
-                    component={HomeScreen} />
+                    component={HomeNavigation} />
                 <Tab.Screen
                     name="List"
                     component={ListScreen} />
