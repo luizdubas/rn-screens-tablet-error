@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeNavigation from './HomeNavigation';
 import ChatNavigation from './ChatNavigation';
 import ListScreen from '../screens/ListScreen';
+import CounterScreen from '../screens/CounterScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,6 +18,9 @@ const RootNavigation = () => {
                 <Tab.Screen
                     name="List"
                     component={ListScreen} />
+                <Tab.Screen
+                    name="Counter"
+                    component={CounterScreen} />
                 <Tab.Screen
                     name="Chats"
                     component={ChatNavigation} />
