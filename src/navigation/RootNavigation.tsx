@@ -5,6 +5,7 @@ import HomeNavigation from './HomeNavigation';
 import ChatNavigation from './ChatNavigation';
 import ListScreen from '../screens/ListScreen';
 import CounterScreen from '../screens/CounterScreen';
+import ColorNavigation from './ColorNavigation';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,6 +22,9 @@ const RootNavigation = () => {
                 <Tab.Screen
                     name="Counter"
                     component={CounterScreen} />
+                <Tab.Screen
+                    name="Colors"
+                    component={ColorNavigation} />
                 <Tab.Screen
                     name="Chats"
                     component={ChatNavigation} />
